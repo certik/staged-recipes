@@ -1,5 +1,5 @@
 {% set name = "lfortran" %}
-{% set version = "0.1.14" %}
+{% set version = "0.1.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://lfortran.github.io/tarballs/release/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f981b485dcd87aefa64c2f3dbd4d13ab5fc47fefb39b8e443a942f71424f634
+  sha256: 946b49db33b63365fb0af6ffe4849315ca54961f7cbe5a7b75082815f146268f
   patches:
     - cmake_osx.diff
 
