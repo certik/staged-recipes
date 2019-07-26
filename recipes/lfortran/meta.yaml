@@ -25,7 +25,6 @@ requirements:
     - pip
     - scikit-build
     - setuptools
-    - ninja
   run:
     - python
     - llvmlite
