@@ -13,14 +13,16 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script:
+    - unset CMAKE_GENERATOR   # [win]
+    - "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py<37]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - cmake
-    - make
+    - make   # [not win]
   host:
     - python
     - pip
