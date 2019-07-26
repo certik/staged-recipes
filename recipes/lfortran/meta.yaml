@@ -8,8 +8,6 @@ package:
 source:
   url: https://lfortran.github.io/tarballs/release/{{ name }}-{{ version }}.tar.gz
   sha256: 946b49db33b63365fb0af6ffe4849315ca54961f7cbe5a7b75082815f146268f
-  patches:
-    - cmake_osx.diff
 
 build:
   number: 0
