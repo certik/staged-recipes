@@ -19,7 +19,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - cmake
-    - ninja
+    - make
   host:
     - python
     - pip
